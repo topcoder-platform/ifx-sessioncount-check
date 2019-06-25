@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ifxmigconnect:
+    image: ifxmigconnect:latest
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    env_file:
+      - api.env
+    network_mode: "host"   
+    #entrypoint: npm run test
+    #entrypoint: npm run cov
+    #entrypoint: npm run e2e
+    #entrypoint: npm run cov-e2e
+    entrypoint: npm run start:docker
