@@ -17,7 +17,7 @@ let sql = `select count(*)::int as count from ${table}`
 */
 
 async function play() {
-//let sql = `select sysdatabases.name database, syssessions.hostname, count(*) sessions  from syslocks, sysdatabases , outer syssessions where syslocks.tabname = "sysdatabases" and syslocks.rowidlk = sysdatabases.rowid and syslocks.owner = syssessions.sid group by sysdatabases.name, syssessions.hostname order by count(*) desc`
+
 let sql = config.get('INFORMIX.sqlquery')
 
 const connectionString = 'SERVER=' + config.get('INFORMIX.SERVER') +
