@@ -10,6 +10,7 @@ How setup.
   Note: LambdaFile folder is not part of Docker Setup.
   
   Lambdafile Setup
+  
   I) DB_SessionPerHost_Check
   A) Setup lambda function DB_SessionPerHost_Check
   B) Set env variable
