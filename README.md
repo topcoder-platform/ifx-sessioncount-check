@@ -1,7 +1,7 @@
 # ifx-sessioncount-check
 Check informix session count and trigger alert 
 
-How setup.
+How to setup informix connection via Docker.
 
 1) create env.list with relevant informix credentials and sql query
 2) Build the Docker: docker-compose -f docker/docker-compose.yml build ifx-sessioncount-check
