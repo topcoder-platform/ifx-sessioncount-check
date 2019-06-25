@@ -5,6 +5,7 @@ How to setup informix connection via Docker.
 
 1) create env.list with relevant informix credentials and sql query
 2) Build the Docker: docker-compose -f docker/docker-compose.yml build ifx-sessioncount-check
+2a) Please change docker/Dockerfie Image Name as per build name
 3) Run the docker : docker run -ti --rm --env-file <path to env.list> ifx-sessioncount-check:latest
   
   Note: LambdaFile folder is not part of Docker Setup.
